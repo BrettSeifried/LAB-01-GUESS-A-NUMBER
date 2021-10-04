@@ -28,7 +28,12 @@ button.addEventListener('click', () =>{
   displayGuesses.textContent = `${numGuesses}`
 });
 
-refresh.addEventListener('click', ()=> {
-  window.location.reload()
+// // refresh.addEventListener('click', ()=> {
+// //   set 
+//   // window.location.reload()
+// })
+
+refresh.addEventListener('click', () => {
+  numGuesses.value = '0';
 })
 

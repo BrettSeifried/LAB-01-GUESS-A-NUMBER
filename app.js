@@ -4,6 +4,7 @@ const button = document.getElementById('submit');
 const remain = document.getElementById('chances');
 const userMessage = document.getElementById('motivation');
 const displayGuesses = document.getElementById('guesses');
+const refresh = document.getElementById('restart');
 let randomNum = Math.floor(Math.random() * (20 - 0) + 1);
 let numGuesses = 4;
 
@@ -27,5 +28,7 @@ button.addEventListener('click', () =>{
   displayGuesses.textContent = `${numGuesses}`
 });
 
-
+refresh.addEventListener('click', ()=> {
+  window.location.reload()
+})
 

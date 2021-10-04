@@ -1,3 +1,8 @@
+body {
+    background-image: url('../assets/196108.webp');
+    background-size: contain;
+}
+
 body, main {
     display: flex;
     flex-direction: column;
@@ -6,8 +11,20 @@ body, main {
 
 h1, h2 {
     margin: 10px;
+    filter: drop-shadow(5px 5px 4px rgb(227, 173, 243));
 }
 
 #input {
     text-align: center;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+
+#restart {
+    margin: 50px;
+    background-color: rgb(241, 86, 86);
 }

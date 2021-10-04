@@ -1,6 +1,7 @@
 body {
     background-image: url('../assets/196108.webp');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body, main {

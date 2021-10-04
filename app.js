@@ -9,29 +9,26 @@ let numGuesses = 4;
 
 // events
 button.addEventListener('click', () =>{
-  numGuesses--;
-  const guess = (Number(userGuess.value));
-  let userMessage;
-  if (guess === randomNum){
-    userMessage = 'You got it!'
-  } else if (numGuesses === 0) {
-    userMessage = 'You are out of guesses, You lose';
-    button.style.display = 'none'
-  } else if (guess > randomNum) {
-    userMessage = 'Number too high!';
-  } else if (guess < randomNum) {
-    userMessage = 'Number too low'
-  }
-  remain.textContent = `${userMessage}`
-  displayGuesses.textContent = `${numGuesses}`
+    numGuesses--;
+    const guess = (Number(userGuess.value));
+    let userMessage;
+    if (guess === randomNum){
+        userMessage = 'You got it!';
+    } else if (numGuesses === 0) {
+        userMessage = 'You are out of guesses, You lose';
+        button.style.display = 'none';
+    } else if (guess > randomNum) {
+        userMessage = 'Number too high!';
+    } else if (guess < randomNum) {
+        userMessage = 'Number too low';
+    }
+    remain.textContent = `${userMessage}`;
+    displayGuesses.textContent = `${numGuesses}`;
 });
 
-// // refresh.addEventListener('click', ()=> {
-// //   set 
-//   // window.location.reload()
-// })
-
 refresh.addEventListener('click', () => {
-  numGuesses.value = 0;
-})
+    numGuesses = 4;
+    button.style.display = '';
+    remain.textContent = '';
+});
 

@@ -15,14 +15,14 @@ button.addEventListener('click', () =>{
 
   let userMessage;
   if(guess === randomNum){
-    userMessage = 'You got it!'
+      userMessage = 'You got it!'
   } else if (numGuesses === 0) {
-    userMessage = 'You are out of guesses, You lose';
-    button.style.display = 'none'
+      userMessage = 'You are out of guesses, You lose';
+      button.style.display = 'none'
   } else if (guess > randomNum) {
-    userMessage = 'Number too high!';
+      userMessage = 'Number too high!';
   } else if (guess < randomNum) {
-    userMessage = 'Number too low'
+      userMessage = 'Number too low'
   }
   remain.textContent = `${userMessage}`
   displayGuesses.textContent = `${numGuesses}`

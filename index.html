@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Brettfords Number Guesser</title>
 </head>
 
 <body>
-
-    <script type="module" src="./app.js"></script>
+    <header>
+        <h1>Guess a number between 1 and 20</h1>
+    </header>
+    <main>
+        <h2>You only get four chances</h2>
+        <input type="number" id="input" placeholder="First Guess!">
+        <br>
+        <button id="submit">Submit</button>
+         <div id="result">
+            <h1>Too high/Low/on point</h1>
+            <h2>You have <span id-="chanes"></span> remaining</h2>
+         </div>
+    </main>
 </body>
-
+<script type="module" src="./app.js"></script>
 </html>

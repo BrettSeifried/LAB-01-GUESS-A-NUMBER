@@ -1,28 +1,30 @@
 // Inputs
 const userGuess = document.getElementById('input');
 const button = document.getElementById('submit');
-const remain = document.getElementById('chanes');
+const remain = document.getElementById('chances');
+const userMessage = document.getElementById('motivation');
+const displayGuesses = document.getElementById('guesses');
 let randomNum = Math.floor(Math.random() * (20 - 0) + 1);
-let numGuesses = 0;
+let numGuesses = 4;
 
 // events
 button.addEventListener('click', () =>{
-  numGuesses++;
+  numGuesses--;
   const guess = (Number(userGuess.value));
-  motivation.style.display = 'none';
 
-  let remain;
+  let userMessage;
   if(guess === randomNum){
-    remain = 'You got it!'
-  } else if (numGuesses === 4) {
-    remain= 'You are out of guesses';
+    userMessage = 'You got it!'
+  } else if (numGuesses === 0) {
+    userMessage = 'You are out of guesses, You lose';
     button.style.display = 'none'
   } else if (guess > randomNum) {
-    remain = 'Number too high!';
+    userMessage = 'Number too high!';
   } else if (guess < randomNum) {
-    remain = 'Number too low'
+    userMessage = 'Number too low'
   }
-
+  remain.textContent = `${userMessage}`
+  displayGuesses.textContent = `${numGuesses}`
 });
 
 

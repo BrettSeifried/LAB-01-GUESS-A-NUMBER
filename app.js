@@ -6,10 +6,14 @@ let randomNum = Math.floor(Math.random() * (20 - 0) + 1);
 let numGuesses = 0;
 
 
+
+
 // events
 button.addEventListener('click', () =>{
   numGuesses++;
-  console.log(numGuesses);
+  console.log(userGuess);
+  // let result;
+  //   if (userGuess)
 });
 
 

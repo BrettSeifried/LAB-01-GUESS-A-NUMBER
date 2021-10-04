@@ -2,6 +2,56 @@
 
 ## Making a plan
 
+### Guess a Number App
+## Guess a Number
+* Input
+    * Guess
+* User message (<p>)
+
+# HTML Elemenets
+* input for guess (static (HTML is only))
+* button (static)
+* user message (dynamic)
+* h1 w/ the title of app (static)
+
+# State
+* User Guess
+* random Number / target number
+* number of Guesses
+* User message (dervied)
+
+## translated
+### HTML Elements(view)
+* header-- static
+* user input -- static
+* button --static
+* user message -- dynamic and hcange based ont he user guess
+
+### State
+* userGuess -- will hold the vlaue of the input field
+* randomNum -- will be generated at the start of every game
+* numGuesses -- numnber of guesses -- incremened every time the user clicks the button OR starts at 3 and decrements
+* userMessage
+    - 'You're correct!': -- userGuess === randomNum
+    - 'Guess too high': userGuess > randomNum
+    - 'Guess too low': userGuess < randomNum
+    - 'Invalid guess': numGuesses === 4
+    - 'No more guesses': if input is >20 or not a number (srtetch!) 
+
+### PsuedoCode for Events
+```javascript
+// What Events am I listening for? 
+// on button click do the following:
+//  decrement or increment the guess count
+//  get the value of the user guess from the input
+//      CONVERT THE INPUT TO A NUMBER
+//   compare the user guess to the random Number
+//  if(userGuess === randomNum) -- display you won!
+//  else if  (numGuess === 4 ) -- display you lost, ouf of guesses
+//  else if (userGuess > randomNum) -- display guess too high
+//  else if (userGuess < randomNum) -- display Guess too Low
+```
+
 (bolded steps are mandatory, unbolded are for more advanced projects)
 
 1) **Make a drawing of your app. Simple "wireframes"**

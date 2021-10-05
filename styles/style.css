@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background-image: url('../assets/196108.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body, main {
@@ -13,6 +16,7 @@ body, main {
 h1, h2 {
     margin: 10px;
     filter: drop-shadow(5px 5px 4px rgb(227, 173, 243));
+
 }
 
 #input {

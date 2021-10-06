@@ -14,6 +14,7 @@ button.addEventListener('click', () =>{
     let userMessage;
     if (guess === randomNum){
         userMessage = 'You got it!';
+        button.style.display = 'none';
     } else if (numGuesses === 0) {
         userMessage = 'You are out of guesses, You lose';
         button.style.display = 'none';
